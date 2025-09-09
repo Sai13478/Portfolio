@@ -11,8 +11,8 @@ const Contact: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: FaGithub, url: "#", label: "GitHub" },
-    { icon: FaLinkedin, url: "#", label: "LinkedIn" }
+    { icon: FaGithub, url: "https://github.com/Sai13478", label: "GitHub" },
+    { icon: FaLinkedin, url: "https://www.linkedin.com/in/v-ananda-naga-sai-pramodu-7068b1375/", label: "LinkedIn" }
   ];
 
   return (

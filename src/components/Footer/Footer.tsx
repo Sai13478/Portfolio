@@ -9,12 +9,12 @@ const Footer: React.FC = () => {
   const socialLinks: SocialLink[] = [
     { 
       icon: FaGithub,
-      url: "https://github.com/your-username", 
+      url: "https://github.com/Sai13478", 
       label: "GitHub" 
     },
     { 
       icon: FaLinkedin,
-      url: "https://linkedin.com/in/your-profile", 
+      url: "https://www.linkedin.com/in/v-ananda-naga-sai-pramodu-7068b1375/", 
       label: "LinkedIn" 
     },
     { 
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
     {
       icon: FaPhone,
       value: "+91 7997755068",
-      href: "tel:+911234567890"
+      href: "tel:+917997755068"
     },
     {
       icon: FaMapMarkerAlt,
