@@ -1,0 +1,262 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6rem 10%;
+  background-color: var(--dark);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subTitle {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 3rem;
+  color: var(--light);
+}
+
+.subTitle span {
+  color: var(--primary);
+}
+
+.contactWrapper {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.contactText {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contactTitle {
+  font-size: 3rem;
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+  color: var(--light);
+}
+
+.contactSubtitle {
+  margin: 15px 0;
+  color: var(--secondary);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.contactDescription {
+  color: #b0b0b0;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contactList {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.contactItem {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contactItem i {
+  color: var(--primary);
+  font-size: 1.25rem;
+  min-width: 20px;
+}
+
+.contactItem a {
+  color: var(--light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactItem a:hover {
+  color: var(--primary);
+}
+
+.contactIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  font-size: 1.25rem;
+  color: var(--primary);
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+.socialIcon:hover {
+  background: var(--primary);
+  color: var(--dark);
+  box-shadow: 0 0 20px var(--primary);
+  transform: translateY(-3px);
+}
+
+.contactForm {
+  flex: 1;
+  min-width: 300px;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formInput,
+.formTextarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 18px 20px;
+  background: #2b2b2b;
+  color: var(--light);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.3);
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 150px;
+  line-height: 1.6;
+}
+
+.statusMessage {
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.statusMessage.success {
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid #4caf50;
+  color: #4caf50;
+}
+
+.statusMessage.error {
+  background: rgba(244, 67, 54, 0.1);
+  border: 1px solid #f44336;
+  color: #f44336;
+}
+
+.sendButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 40px;
+  background: var(--primary);
+  border-radius: 40px;
+  font-size: 1.125rem;
+  color: var(--dark);
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 5px var(--primary), 0 0 25px rgba(30, 144, 255, 0.3);
+}
+
+.sendButton:hover:not(:disabled) {
+  box-shadow: 0 0 5px var(--primary), 0 0 25px var(--primary), 0 0 50px rgba(30, 144, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.sendButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.sendButton.sending {
+  background: #666;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .contactWrapper {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .contactText,
+  .contactForm {
+    width: 100%;
+  }
+  
+  .contactTitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 4rem 5%;
+  }
+  
+  .subTitle {
+    font-size: 2.5rem;
+  }
+  
+  .contactTitle {
+    font-size: 2rem;
+  }
+  
+  .contactSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .contactIcons {
+    justify-content: center;
+  }
+  
+  .socialIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .formInput,
+  .formTextarea {
+    padding: 14px 16px;
+    font-size: 0.95rem;
+  }
+  
+  .sendButton {
+    padding: 14px 32px;
+    font-size: 1rem;
+  }
+}
